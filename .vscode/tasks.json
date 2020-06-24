@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: build active project",
+			"command": "/usr/local/bin/docker",
+			"args": [
+				"run",
+				"-it",
+				"--rm",
+				"-v",
+				"${env:NODEMCU_DIR}:${env:NODEMCU_DIR}",
+				"-w",
+				"${env:NODEMCU_DIR}",
+				"esp-rtos",
+				"make",
+				"-C",
+				"${workspaceFolderBasename}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

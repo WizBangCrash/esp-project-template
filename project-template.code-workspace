@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../esp-open-rtos"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 4,
+		"C_Cpp.default.intelliSenseMode": "gcc-x64",
+		"C_Cpp.intelliSenseEngineFallback": "Enabled",
+		"files.associations": {
+			"*.json": "jsonc",
+			"esp_common.h": "c",
+			"esp_softap.h": "c"
+		}
+	}
+}

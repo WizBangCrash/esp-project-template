@@ -1,0 +1,20 @@
+{
+  "env": {
+    "myDefaultIncludePath": ["${workspaceFolder}", "${env:NODEMCU_DIR}/esp-open-rtos"]
+  },
+  "configurations": [
+    {
+      "name": "Mac",
+      "compilerPath": "",
+      "intelliSenseMode": "gcc-x64",
+      "includePath": ["${myDefaultIncludePath}"],
+      "defines": ["FOO", "BAR=100"],
+      "browse": {
+        "path": ["${myDefaultIncludePath}"],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      }
+    }
+  ],
+  "version": 4
+}
